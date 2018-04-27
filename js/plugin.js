@@ -28,7 +28,27 @@
         autoplay: true,
         autoplaySpeed: 4000,
         // dots: true
+        responsive: [
+            {
+                breakpoint: 1024,
+                settings: {
+                    arrows: false,
+                }
+            }
+        ]
     });
+
+    //mouse wheel
+    slickCarousel.mousewheel(function(e) {
+        e.preventDefault();
+        if (e.deltaY < 0) {
+            $(this).slick('slickNext');
+        }
+        else {
+            $(this).slick('slickPrev');
+        }
+    });
+
 
     //go to up
     $(window).scroll(function(){
