@@ -11,11 +11,11 @@ function init_map(){
     marker = new google.maps.Marker({
         map: map,
         position: new google.maps.LatLng(50.4501,30.523400000000038),
-        animation: google.maps.Animation.BOUNCE
+        // animation: google.maps.Animation.BOUNCE
     });
-    infowindow = new google.maps.InfoWindow({
-        content:'<strong>Hello , Riff Point!</strong><br>Kyiv, Ukraine<br>'
-    });
+    // infowindow = new google.maps.InfoWindow({
+    //     content:'<strong>Hello , Riff Point!</strong><br>Kyiv, Ukraine<br>'
+    // });
 
 
     var styles = [

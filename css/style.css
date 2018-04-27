@@ -94,13 +94,11 @@ main{margin-top: 70px;}
 /*SERVICES START*/
 .our_services, .footer{background-color: #f5f5f5;}
 .item_wrap{display: flex;flex-direction: row;}
+@media (max-width: 992px){.item_wrap{flex-direction: column;}}
+@media (max-width: 756px){.item_wrap{flex-direction: row;}}
+.icons_item{display: inline-block;background: url('../images/sprite/item-sprite.png') no-repeat;width: 80px;height: 80px;}
 @media (max-width: 992px){
-    .item_wrap{flex-direction: column;}  }
-@media (max-width: 756px){
-    .item_wrap{flex-direction: row;}  }
-.icons_item{display: inline-block;background: url('../images/sprite/item-sprite.png') no-repeat;overflow: hidden;text-indent: -9999px;text-align: left;width: 80px;height: 80px;}
-@media (max-width: 992px){
-    .icons_item{margin-bottom: 20px;}  }
+    .icons_item{margin-bottom: 20px;}}
 .item-ico-1{background-position: -0px -0px;}
 .item-ico-2{background-position: -80px -0px;}
 .item-ico-3{background-position: -0px -80px;}
@@ -111,8 +109,8 @@ main{margin-top: 70px;}
 .item_wrap{margin-top: 40px;}
 .item-row .title{font-size: 1.25rem;}
 .item-row p{font-family: 'open_sansregular';margin-top: 10px;line-height: 1.25;}
-
 /*SERVICES END*/
+
 /*SUBSCRIBE START*/
 .subscribe_now{background-color: #424242;color: #ffffff;}
 .subscribe_row{display: flex;flex-direction: row;align-items: center;margin: 45px 0;}
@@ -150,25 +148,19 @@ main{margin-top: 70px;}
 /*CONTACT START*/
 .contact{background-color: #f5f5f5;}
 .contact .subscribe_row{margin: 40px 0;}
-@media (max-width: 1195px) {
-    .contact .subscribe_row{flex-direction: column;}  }
+@media (max-width: 1195px) {.contact .subscribe_row{flex-direction: column;}}
 .contact .head_block{align-items: flex-start;margin-bottom: 0;}
-@media (max-width: 767px) {
-    .contact .head_block{align-items: center;margin-bottom: 40px;}}
-@media (max-width: 1195px) {
-    .contact .head_block{margin-bottom: 40px;}}
+@media (max-width: 767px) {.contact .head_block{align-items: center;margin-bottom: 40px;}}
+@media (max-width: 1195px) {.contact .head_block{margin-bottom: 40px;}}
 .contact_items{display: flex;flex-direction: row;justify-content: space-between;}
-@media (max-width: 767px) {
-    .contact .subscribe_row .contact_items{width: 100%;min-height: 420px;display: flex;}}
+@media (max-width: 767px) {.contact .subscribe_row .contact_items{width: 100%;min-height: 420px;display: flex;}}
 .contact_item_row{display: flex;align-items: center;}
-@media (max-width: 767px) {
-    .contact_item_row{flex-direction: column;margin-bottom: 40px;}}
+@media (max-width: 767px) {.contact_item_row{flex-direction: column;margin-bottom: 40px;}}
 @media (max-width: 1195px) {
     .contact_item_row{flex-direction: column;height: 160px;}}
-.contact_ico{display: flex;height: 3.75rem;min-width: 3.75rem;background-color: #ff6e40;border-radius: 50%;justify-content: center;align-items: center;font-size: 30px;color: #ffffff;margin: 0 14px 20px 0;}
+.contact_ico{display: flex;height: 3.75rem;min-width: 3.75rem;background-color: #ff6e40;border-radius: 50%;justify-content: center;align-items: center;font-size: 30px;color: #ffffff;margin-right: 14px;}
 .contact_item_row p{font-size: 1rem;font-family: 'open_sansregular';color: #616161;}
-@media (max-width: 767px) {
-    .contact_items{flex-direction: column;}}
+@media (max-width: 767px) {.contact_items{flex-direction: column;}.contact_ico{margin-bottom: 20px;}}
 /*CONTACT END*/
 
 /* GOOGLE MAPS START*/
@@ -201,7 +193,7 @@ main{margin-top: 70px;}
 .footer .block_right p::before{content: '|';display: inline-block;height: 100%;color: #ff6e40;margin: 0 10px;}
 
 /*PAGE UP*/
-.page_up{position: relative;opacity: 0;}
+.page_up{position: relative;opacity: 0;transition: .3s}
 .page_up_btn{height: 40px;width: 40px;border: 2px solid #ff6e40;background-color: transparent;cursor: pointer;position: fixed;bottom: 20%;right: 30px;padding: 13px 10px;}
 .page_up_btn ~ span:hover{background-color: #ff6e40;}
 .page_up_btn span{display: block;height: 16px;width: 16px;border-top: 5px solid #ff6e40;border-right: 5px solid #ff6e40;transform: rotate(-45deg);}
